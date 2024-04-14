@@ -1,0 +1,73 @@
+/* Global settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Navigation styles */
+header nav ul {
+    list-style-type: none;
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+}
+header nav ul li a.cta {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+/* Responsive nav toggle */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .nav-toggle {
+        display: block;
+    }
+    header nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    header nav ul li {
+        display: block;
+    }
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+}
+/* Hero section styles */
+section#hero {
+    position: relative;
+    height: 70vh;
+    background: url('../assets/images/hero-image.jpg') no-repeat center center/cover;
+}
+section#hero .hero-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
