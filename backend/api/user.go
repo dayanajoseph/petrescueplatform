@@ -9,7 +9,7 @@ import (
 	"github.com/dgrijalva/jwt-go"
 )
 
-var jwtKey = []byte("your_secret_key") // Replace with your secret key
+var jwtKey = []byte("bella") // Replace with your secret key
 
 type Credentials struct {
 	Password string `json:"password"`
